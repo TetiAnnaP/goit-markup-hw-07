@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,33 +22,116 @@
     <header class="header">
       <div class="header-container container">
         <!-- NAVIGATION -->
-        <nav class="nav">
+        <div class="logo-container">
           <a class="logo-link" href="./index.html"
             ><span class="web">web</span>studio</a
           >
-          <ul class="nav-list">
-            <li class="menu menu-studio">
-              <a class="link link-studio" href="./index.html">Studio </a>
-            </li>
-            <li class="menu">
-              <a class="link" href="./potrfolio.html">Portfolio</a>
-            </li>
-            <li class="menu"><a class="link" href="">Contacts</a></li>
-          </ul>
-        </nav>
-        <!-- CONTACTS -->
-        <address class="address">
-          <ul class="address-list">
-            <li class="menu">
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="menu">
-              <a class="link" href="tel:+11000111-11-11">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
+          <button type="button" class="burger-button" data-modal-open>
+            <svg
+              class="burger-icon"
+              width="32"
+              height="22"
+              aria-label="mobile menu"
+            >
+              <use href="./images/sprite.svg#icon-hamburger"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="nav-container">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="menu menu-studio">
+                <a class="link link-studio" href="./index.html">Studio </a>
+              </li>
+              <li class="menu">
+                <a class="link" href="./potrfolio.html">Portfolio</a>
+              </li>
+              <li class="menu"><a class="link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <!-- CONTACTS -->
+          <address class="address">
+            <ul class="address-list">
+              <li class="menu">
+                <a class="link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="menu">
+                <a class="link" href="tel:+11000111-11-11"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+      <div class="mobile-menu" data-modal>
+        <div class="mobile-container">
+          <button type="button" class="mobile-close-button" data-modal-close>
+            <svg class="mobile-close-icon" width="8" height="8">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="menu menu-studio">
+                <a class="link link-studio" href="./index.html">Studio </a>
+              </li>
+              <li class="menu">
+                <a class="link" href="./potrfolio.html">Portfolio</a>
+              </li>
+              <li class="menu"><a class="link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="mobile-content-wrapper">
+            <address class="address">
+              <ul class="address-list">
+                <li class="mob-tel-item menu">
+                  <a class="link tel-link" href="tel:+11000111-11-11"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-email-item menu">
+                  <a class="link email-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mobile-soc-list">
+              <li class="mobile-soc-menu menu">
+                <a class="mobile-soc-link link" href="">
+                  <svg class="icon-instagram social-icon">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-soc-menu menu">
+                <a class="mobile-soc-link link" href="">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-soc-menu menu">
+                <a class="mobile-soc-link link" href="">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-soc-menu menu">
+                <a class="mobile-soc-link link" href="">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -446,7 +529,7 @@
         </div>
       </div>
     </footer>
-    <!-- BACKDROP -->
+    <!-- BACKDROP
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
@@ -527,7 +610,8 @@
           <button class="modal-button-submit" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
