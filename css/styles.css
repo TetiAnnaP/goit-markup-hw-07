@@ -862,8 +862,12 @@ body {
 
 
     .customers-container {
-        padding-right: 108px;
-        padding-left: 108px;
+        /* padding-right: 108px;
+        padding-left: 108px; */
+    }
+
+    .customers-menu {
+        width: calc((100% - 216px) / 3);
     }
 
     .customers-link {
@@ -912,7 +916,7 @@ body {
 
     .customers-list {
         row-gap: 72px;
-        column-gap: 16px;
+        /* column-gap: 16px; */
     }
 
     .team-item.menu:nth-child(2n) {
