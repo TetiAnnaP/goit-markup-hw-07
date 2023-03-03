@@ -234,7 +234,8 @@ body {
 }
     
 .hero-container {
-    padding: 112px 54px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -253,14 +254,16 @@ body {
  }
 
     
-.hero-title {
-    margin-bottom: 48px;
+.hero-title {   
     color: var(--main-inverse-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     margin-bottom: 72px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
 }
     
 .hero-section .order-button {             
@@ -619,7 +622,8 @@ body {
     }
 
     .customers-link {            
-        width: 130px;            
+        max-width: 130px;   
+        height: 75px;         
     }
     
 }
@@ -828,7 +832,8 @@ body {
     /* ==========HERO SECTION MIN 768PX */
 
     .hero-container {
-        padding: 112px 136px;
+        padding-top: 112px;
+        padding-bottom: 112px;
                           
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet@1-768.jpg);
     }
@@ -844,6 +849,9 @@ body {
     .hero-title {
         margin-bottom: 48px;
         font-size: 56px;
+        width: 496px;
+        margin-left: auto;
+        margin-right: auto;
     }
   
    /* ==========STRATEGY-SECTION MIN 768PX */
@@ -1002,7 +1010,8 @@ body {
         max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
-        padding: 188px 315px;
+        padding-top: 188px;
+        padding-bottom: 188px;
  
         background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/desc@1-1440.jpg);        
      }
