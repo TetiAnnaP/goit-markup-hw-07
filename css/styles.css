@@ -604,6 +604,26 @@ body {
     }
 }
 
+@media screen and (max-width: 429px) {
+
+    .hero-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-title {
+        max-width: 280px;
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .customers-link {            
+        width: 130px;            
+    }
+    
+}
+
 /* ==========MAX 767PX */
 
 @media screen and (max-width: 767px) {
